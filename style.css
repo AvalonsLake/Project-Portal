@@ -110,3 +110,38 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/* fixing the cards positioning */
+
+.card2 {
+  margin-top: -16px;
+}
+
+.card3 {
+  margin-top: -16px;
+}
+
+/* Card images */
+
+.front1 {
+  background-image: url(img/mario-backdrop.jpg);
+}
+.back1 {
+  background-image: url(img/mario-backdrop-dark.png);
+}
+
+.front2 {
+  background-image: url(img/sky.webp);
+}
+.back2 {
+  background-image: url(img/sky-dark.png);
+}
+
+.front3 {
+  background-image: url(img/kitten.jpeg);
+  background-size: cover;
+}
+.back3 {
+  background-image: url(img/kitten-dark.png);
+  background-size: cover;
+}
