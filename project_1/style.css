@@ -48,6 +48,8 @@ footer {
   /* position: fixed; */
   bottom: 0;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30em;
 }
 
@@ -63,7 +65,7 @@ footer {
 
 .cards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
@@ -116,10 +118,27 @@ footer {
 
 /* fixing the cards positioning */
 
-.card2 {
-  margin-top: -16px;
+/* Card images */
+
+.front1 {
+  background-image: url(img/mario-backdrop.jpg);
+}
+.back1 {
+  background-image: url(img/mario-backdrop-dark.png);
 }
 
-.card3 {
-  margin-top: -16px;
+.front2 {
+  background-image: url(img/sky.webp);
+}
+.back2 {
+  background-image: url(img/sky-dark.png);
+}
+
+.front3 {
+  background-image: url(img/kitten.jpeg);
+  background-size: cover;
+}
+.back3 {
+  background-image: url(img/kitten-dark.png);
+  background-size: cover;
 }
