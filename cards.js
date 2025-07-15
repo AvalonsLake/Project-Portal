@@ -1,11 +1,23 @@
 let cardsList = document.querySelector(".cards");
 let cards = [];
 
-// look up what an object in JavaScript is, when you find the syntax for an object, include a title and a url link
-// Look up how to push an object to an array
-const card = { title: "card", link: "" };
+const card = {
+  title: "MarioClub",
+  link: "https://avalonslake.github.io/Mario-Club/",
+};
 cards.push(card);
-console.log(cards);
+
+const cats = {
+  title: "Cat Photos",
+  link: "https://avalonslake.github.io/CatAppWebsite/",
+};
+cards.push(cats);
+
+const weather = {
+  title: "MyWeather",
+  link: "https://avalonslake.github.io/Weather-App-Project/",
+};
+cards.push(weather);
 
 cards.map((item) => {});
 
@@ -15,7 +27,29 @@ cardsList.innerHTML += `<div class="card">
             <h2>${card.title}</h2>
           </div>
           <div class="card-back back1">
-            <a href="./project_1/index.html">Project Link</a>
+            <a href=${card.link}>Project Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front front1">
+            <h2>${cats.title}</h2>
+          </div>
+          <div class="card-back back1">
+            <a href=${cats.link}>Project Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front front1">
+            <h2>${weather.title}</h2>
+          </div>
+          <div class="card-back back1">
+            <a href=${weather.link}>Project Link</a>
           </div>
         </div>
       </div>`;
